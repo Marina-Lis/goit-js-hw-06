@@ -21,4 +21,20 @@ input {
 button {
   padding: 8px 12px;
   cursor: pointer;
+  
+}
+.gallery{
+  display: flex;
+}
+
+.list-item{
+  list-style: none;}
+
+.gallery .list-item img{
+  height: 100%;
+  width: calc((100% - 30px)/3);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-width: 100%;
 }
