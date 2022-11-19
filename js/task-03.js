@@ -22,9 +22,8 @@ const images = [
 // Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
 const divEl = document.querySelector(".gallery");
 
-const x= images.map(value => {
- return "<li class='list-item'><img src=" + value.url + " alt="+value.alt+ "></li>";
-});
+images.map(value => {
 
-divEl.insertAdjacentHTML("beforeend", x);
-console.log(x);
+ const element= `<li class='list-item'><img src='${value.url}' alt='${value.alt}'></li>`;
+  divEl.insertAdjacentHTML("beforeend", element);
+});
