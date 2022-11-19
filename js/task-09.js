@@ -20,10 +20,12 @@ const changeColorButton = document.querySelector('.change-color');
 
 changeColorButton.addEventListener("click", (event)=>{
   event.preventDefault();
-  document.body.style.background  = getRandomHexColor();
-  console.log(getRandomHexColor());
-  wigetDiv.textContent = getRandomHexColor();
+  const color=  getRandomHexColor();
+  document.body.style.background =color;
+  wigetDiv.textContent = color
+  console.log(color);
 });
+
 
 
 function getRandomHexColor() {
